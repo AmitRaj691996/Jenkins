@@ -18,4 +18,13 @@ pipeline{
             }
       }
   }
+  post{
+    success{
+          echo " Pipeline succeeded!!!"
+          }
+   faliure{
+        echo " Pipeline failed******"
 }
+}
+}
+
