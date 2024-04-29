@@ -1,0 +1,20 @@
+pipeline{
+  agent any
+  environment{
+      MY_ENV_VAR='custom value'
+  }
+  stages{
+    stage('checkout Stage'){
+        steps{
+            script{
+                def remoteUrlRepo = 'https://github.com/anshulc55/Jenkins_Upgradev3.git'
+                checkout([$class: GitSCM],
+                          branches: [[name: '*/master']],
+                          userRemoteConfigs: [[url: remoteUrlRepo]],
+                          extensions: [[$class: 'CleanBeforeCheckout'], [$class: 'CloneOption', tags: false, shallow: true, depth: 1]]
+                          ])
+               } 
+            }
+      }
+  }
+}
