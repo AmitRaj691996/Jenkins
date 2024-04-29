@@ -22,7 +22,7 @@ pipeline{
     success{
           echo " Pipeline succeeded!!!"
           }
-   faliure{
+   failure{
         echo " Pipeline failed******"
 }
 }
