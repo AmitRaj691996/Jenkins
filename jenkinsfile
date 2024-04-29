@@ -14,8 +14,9 @@ pipeline{
 									extensions: [[$class: 'CleanBeforeCheckout'], [$class: 'CloneOption', notags: false, shallow: true, depth: 1]]
 									])
 							}
+						echo "$MY_ENV_VAR"
 						}
-						sh 'echo "$MY_ENV_VAR"'
+						
 					}
 				}
 			}
