@@ -11,7 +11,7 @@ pipeline{
             }
       stage('Installing maven...'){
             steps{
-            auditTools2 message: This is demo from Job 2
+            auditTools2 message: 'This is demo from Job 2'
             }
             }
           }
