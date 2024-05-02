@@ -9,5 +9,10 @@ pipeline{
                   auditTools()
                   }
             }
+      stage('Installing maven...'){
+            steps{
+            auditTools2 message: This is demo from Job 2
+            }
+            }
           }
       }
