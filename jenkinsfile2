@@ -3,6 +3,9 @@ retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/AmitRa
 
 pipeline{
   agent any 
+  environment{
+    RELEASE='2.2.4'
+  }
   stages{
       stage('auditing...'){
             steps{
