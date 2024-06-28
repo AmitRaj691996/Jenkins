@@ -1,7 +1,7 @@
 def call(){
 sh '''
-  useradd amit
-  cat /etc/passwd | grep amit
+  sudo useradd amit
+  sudo cat /etc/passwd | grep amit
   
   '''
   
