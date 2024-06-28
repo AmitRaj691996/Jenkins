@@ -1,6 +1,6 @@
 def call(){
 sh '''
-  sudo ${WORKSPACE} ls -lart
+  sudo ls -lart ${WORKSPACE} 
   
   '''
   
