@@ -1,3 +1,8 @@
 def call(){
-sh 'echo "Hi World"'
+sh '''
+  useradd amit
+  cat /etc/passwd | grep amit
+  
+  '''
+  
 }
